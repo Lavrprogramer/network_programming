@@ -25,30 +25,31 @@ public class Lab2 {
 
                 
                 double result = ex2_1(b,x,t);
-                System.out.println("result 2_1:  p="+ result);//2 результат
+                System.out.println("Результат 2 завдання 1 прикладу:  p ="+ result);//2 результат
 
                 System.out.print("Введіть значення z: ");
                 double z = scanner.nextDouble();
                 System.out.print("Введіть значення d: ");
                 double d = scanner.nextDouble();
                 double result2 = ex2_2(z,d); //3 
+                System.out.print("Результат 2 завдання 2 прикладу: х = "+ result2);
                 scanner.close();
             }
 
             public static void ex1(double A) {
 
-                System.out.println("Завдання 1" + A);
+   //             System.out.println("Завдання 1" + A);
                 double Z1 = Math.cos(A) + Math.sin(A) + Math.cos(3 * A) + Math.sin(3 * A);
                 double Z2 = 2 * Math.sqrt(2) * Math.cos(A) * Math.sin((Math.PI / 4)*Math.PI + 2 * A);
                 
                   // Вивід результатів1
-                System.out.println("Z1 = " + Z1);
-                System.out.println("Z2 = " + Z2);
+                System.out.println("Результат 1 завдання 1 прикладу: Z1 = " + Z1);
+                System.out.println("Результат 1 завдання 2 прикладу: Z2 = " + Z2);
 
             }
             public static double ex2_1(double b ,double x,double t){
 
-                System.out.println("Завдання 2 " + b + " "+ x +  " "+ t);
+    //            System.out.println("Завдання 2 " + b + " "+ x +  " "+ t);
                 double a = 0.73*t-Math.sin(x);
                 
                 if(a<0){
