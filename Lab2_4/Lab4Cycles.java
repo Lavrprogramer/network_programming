@@ -7,7 +7,8 @@ public class Lab4Cycles {
     double [] newArray = mixElement(elements,elementsNumber);
     return newArray;
      }
-     public int [] getMaxMinElementInfo(double[] elements)
+
+     private int [] getMaxMinElementInfo(double[] elements)
      {
         int elementsNumberMin = 0, elementsNumberMax = 0;
         double maxElement=elements[0];
@@ -23,13 +24,12 @@ public class Lab4Cycles {
              elementsNumberMin=i;
            }
         }
-       //  System.out.println("getMinElementInf - Min ="+ minElement + " Номер елементу = " + elementsNumberMin);
-       //  System.out.println("getMaxElementInf - Max ="+ maxElement + " Номер елементу = " + elementsNumberMax);
         int [] elementsNumberResult={elementsNumberMax,elementsNumberMin};
         return elementsNumberResult;
       }
-     // public 
-    public double [] mixElement(double [] elements ,int [] elementsNumber){
+
+    private double [] mixElement(double [] elements ,int [] elementsNumber)
+    {
       double max = elements[elementsNumber[0]];
       double min = elements[elementsNumber[1]];
       System.out.println( "Max :"+max +": Min :"+ min);
