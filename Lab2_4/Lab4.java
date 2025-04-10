@@ -9,13 +9,12 @@ package Lab2_4;
 public class Lab4 {
     public static void main(String[] args)
      {    
-        //double [] elements ={2,-110,12,0,3,6,-23,0,5,1,5,0,748,-1,235,9};
         InputSystem input = new InputSystem(); //Створюємо об'єкти для вводу 
         Lab4Cycles cycles = new Lab4Cycles(); // 1 завдання
         ArrayDisplayer display = new ArrayDisplayer();//виводу значень масиву 
         Lab4Cycles2 cycles2 = new Lab4Cycles2();//2 завдання
 
-        double [] elements=input.returnArray(10); //Система введення .Параметр вказує кількість значень які буде введено
+        double [] elements=input.returnArray(10); //Система введення ,параметр вказує кількість значень які буде введено
         
         System.out.println("Введенi значення :");
         display.printInline(elements); 
