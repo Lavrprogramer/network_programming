@@ -1,4 +1,3 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Lab5Class {
@@ -6,14 +5,16 @@ public class Lab5Class {
     Scanner in = new Scanner(System.in);
 
     public void inputSystem(){
+
         System.out.print("Input n: ");
         int n = in.nextInt();
         System.out.print("Input m: ");
         int m = in.nextInt();
         double[][] K = new double[n][m];
-        returnResult(n, m,K);     
+        Result(n, m,K); 
+
     }    
-    private void returnResult(double n,double m,double[][]K)
+    private void Result(double n,double m,double[][]K)
     {
 
         for (int i = 0; i < n; i++) {
