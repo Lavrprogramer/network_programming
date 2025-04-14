@@ -33,12 +33,7 @@ public class Lab5Class {
                 if (7 > K [i][j]) {
                     Sum1 = Sum1 + K [i][j];
                 }
-            }
-        }
-
-        for (int i = 0; i < n; i += 2) { //сума елементів >7
-            for (int j = 0; j < m; j++) {
-                if (7 < K[i][j]) {
+                if (7 < K [i][j]) {
                     Sum2 = Sum2 + K[i][j];
                 }
             }
