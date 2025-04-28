@@ -6,10 +6,11 @@ public class Lab6_2 {
 
     public void Task2(Scanner scanner) {
         int world = 1;
+        System.out.println("2 Завдання");
+        System.out.println("Введiть 2 слова через дефiс:");
         String str = scanner.nextLine();
         String world1 = "";
         String world2 = "";
-        System.out.println(str);
         int i = 0;
         while (i < str.length()) {
             while (i < str.length() && str.charAt(i) != '-') {
@@ -30,9 +31,7 @@ public class Lab6_2 {
                 i++;
             }
         }
-        System.out.println("i="+i);
-        System.out.println("Leght" +str.length());
-        System.out.println(world2 + " " + world1);
+        System.out.println(world2 + "-" + world1);
     }
     
 }

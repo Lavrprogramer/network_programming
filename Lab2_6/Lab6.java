@@ -2,6 +2,8 @@ package Lab2_6;
 
 import java.util.Scanner;
 
+import javax.swing.plaf.synth.SynthStyle;
+
 //2. Дано текст, який містить лише цифри і літери. Визначити, скільки
 //слів містить більше 6 символів. 
 
@@ -11,42 +13,40 @@ import java.util.Scanner;
 public class Lab6 {
         public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        Lab6_2 Task = new Lab6_2();
-        Task.Task2(in);
         String str;
+        System.out.println("1 Завдання");
         try {
+            System.out.println("Введiть рядок:");
             str= in.nextLine();       
         } catch (Exception e) {
-            str="New ТУт є 2 слова по 5 символів та деякі слова менші та більше";     
-        }    
-              
-        int length=0;
-        int world = 0;
-        int i=0;
+            str="1789 – Fletcher Christian, the acting lieutenant on board the Royal Navy ship Bounty, led a mutiny against the commander William Bligh in the South Pacific.";     
+        }        
+        int length=0;int world = 0;int longerThan6Words = 0;int i=0;
         try {
             for(;i<str.length()-1;){
                 int leghtNow=0;           
                 while ((str.charAt(i))!=' ' && i<str.length()-1) {
                     i++;
-                    System.out.println("i="+i);
                     leghtNow++;  
                 }          
                 if(leghtNow>length){
                     length=leghtNow;
                 }
+                if(leghtNow>6){
+                    longerThan6Words++;
+                }
                 world++;
                 i++;
-                System.out.println("i="+i);
             }
         } 
         catch (Exception e) {
           System.out.println("Error!"+e);
         }
-        System.out.println("Найбільше слово = "+ length);
-        System.out.println("Кількість слів : "+world);
-        //System.out.println("String  : "+str);
+        System.out.println("Найбiльше слово = "+ length);
+        System.out.println("Кiлькiсть слiв : "+world);
+        System.out.println("слiв в яких бiльше 6 символiв : "+longerThan6Words);
+        Lab6_2 Task = new Lab6_2();
+        Task.Task2(in);
         in.close();
-        System.out.println("i="+i);
-        System.out.println(str.length());
     }    
 }
