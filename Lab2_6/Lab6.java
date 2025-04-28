@@ -2,7 +2,6 @@ package Lab2_6;
 
 import java.util.Scanner;
 
-import javax.swing.plaf.synth.SynthStyle;
 
 //2. Дано текст, який містить лише цифри і літери. Визначити, скільки
 //слів містить більше 6 символів. 
