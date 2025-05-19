@@ -7,8 +7,7 @@ public class Dollar extends Currency {
         super("Долар США");
         this.rateToHryvnia = rateToHryvnia;
     }
-
-    @Override
+    
     public double toHryvnia(double amount) {
         return amount * rateToHryvnia;
     }

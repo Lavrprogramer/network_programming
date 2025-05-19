@@ -40,19 +40,19 @@ import java.util.Currency;
 public class Lab2_7 {
     public static void main(String[] args) {
 
-      // Завдання 1: створення книги
+      // Завдання 1
         Book book = new Book("Айзек Азімов", "Фундація та Імперія", 350);
         book.showInfo();
 
         System.out.println("\n---");
 
-        // Завдання 2: електронна книга
+        // Завдання 2
         DigitalBook ebook = new DigitalBook("Френк Герберт", "Дюна: Месія", 220, "PDF", 2.7);
         ebook.showFullInfo();
 
         System.out.println("\n---");
         
-        // Завдання 3: валюти
+        // Завдання 3
         Dollar dollar = new Dollar(40.0);
         Euro euro = new Euro(43.0);
         Pound pound = new Pound(50.0);
